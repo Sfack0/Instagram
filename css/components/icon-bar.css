@@ -220,6 +220,7 @@
     .icon-bar__icon svg:hover{
         stroke: var(--clr-white);
         stroke-width: 3px;
+        fill: white;
     }
     
     .insta-logo:hover{

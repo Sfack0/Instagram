@@ -47,6 +47,7 @@ body{
     background-color: var(--clr-dark);
     color: var(--clr-white);
     margin-bottom: 1000px;
+    padding-top: 57.6px;
 }
 
 img,
