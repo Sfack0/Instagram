@@ -8,6 +8,8 @@
     padding-bottom: 0.5rem;
     width: 100%;    
     max-width: 100%;
+    background-color: var(--clr-dark);
+    z-index: 100;
 }
 
 .mobile-header__left-section{

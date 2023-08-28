@@ -55,64 +55,68 @@
 
 .container{
     width: 100%;
-    margin-left: auto;
-    margin-right: auto; 
-    border: 1px solid green;
+
 }
 
 .section{
-    align-self: center;
-    border: 1px solid red;
 }
+
+.main{
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.feed{
+    position: relative;
+    width: 100%;
+}
+
 
 
 
 /* xs */
  @media (min-width: 475px){
-    .container{
-        max-width: 475px;
-    }
+
 
 } 
 
 /* sm */
 @media (min-width: 640px){
-    .container{
-        max-width: 640px;
+    .feed{
+        width: auto;
     }
 } 
 
 /* md */
 @media (min-width: 768px){
-    .container{
-        max-width: 768px;
+    .main{
+        margin-left: 72px;
+        width: calc(100% - 72px);
     }
 
+
     .section{
-        margin: 0 auto;
-        align-self: center;
-        border: 1px solid red;
-        max-width: 80%;
+        max-width: 85%;
     }
     
 }
 
 /* lg */
 @media (min-width: 1024px){
-    .container{
-        max-width: 1024px;
+    .main{
+        justify-content: space-evenly;
     }
 }
 
 /* xl */
 @media (min-width: 1280px){
-    .container{
-        max-width: 1280px;
+
+    .main{
+        margin-left: 240px;
+        width: calc(100% - 240px);
     }
 
-    .section{
-        margin-left: 240px;
-    }
 }
 
 /* 2xl */

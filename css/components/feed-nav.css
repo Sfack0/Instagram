@@ -1,0 +1,37 @@
+.feed-nav{
+    display: none;
+    list-style-type: none;
+    gap: 1rem;
+    overflow: hidden;
+    padding: 0.5rem 0;
+
+
+    border-bottom: 1px solid var(--clr-grey);
+    height: 80px;
+
+    align-items: flex-end;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    background-color: var(--clr-dark);
+
+    transition: top 0.3s ease-out;
+
+}
+
+.feed-nav a{
+    color: var(--clr-grey);
+    font-weight: 600;
+}
+
+.feed-nav .feed-nav__selected{
+    color: white;
+}
+
+
+/* md */
+@media (min-width: 768px){
+    .feed-nav{
+        display: flex;
+    }    
+} 
