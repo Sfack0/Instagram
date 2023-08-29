@@ -3,6 +3,7 @@
     height: 700px;
     background-color: red;
     display: none;
+    margin-left: 20px;
 }
 
 
@@ -12,3 +13,11 @@
         display: flex;
    } 
 }
+
+
+/* xl */
+@media (min-width: 1280px){
+    .right-box{
+        margin-left: 80px;
+    }    
+} 

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/components/stories.css">
     <link rel="stylesheet" href="css/components/right-box.css">
     <link rel="stylesheet" href="css/components/feed-nav.css">
+    <link rel="stylesheet" href="css/components/posts.css">
+
 </head>
 <body>
     <header class="mobile-header container ">
@@ -110,9 +112,9 @@
     <main class="main container">
         <div class="feed">
 
-            <nav class="feed-nav">
-                <a class="feed-nav__selected" href="#">For you</h6>
-                <a href="#">Following</h6>
+            <nav class="feed-nav section">
+                <a class="feed-nav__selected" href="#">For you</a>
+                <a href="#">Following</a>
             </nav>
 
             <ul class="stories section">
@@ -216,6 +218,12 @@
                 </li>
         
             </ul>
+
+            <div class="posts section">
+                <div class="post">
+
+                </div>
+            </div>
         </div>
 
         <div class="right-box">
@@ -239,6 +247,7 @@
 
             if(scrollTop <= 80)
                 return;
+
             if(scrollTop > lastScrollTop){
                 navbar.style.top = '-80px';
             }else{

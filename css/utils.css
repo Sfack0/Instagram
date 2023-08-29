@@ -59,6 +59,7 @@
 }
 
 .section{
+    border: 1px solid red;
 }
 
 .main{
@@ -68,8 +69,11 @@
 }
 
 .feed{
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 100%;
+    background-color: green;
 }
 
 
@@ -78,7 +82,13 @@
 /* xs */
  @media (min-width: 475px){
 
+    .feed{
+    }
 
+    .section{
+        max-width: 85%;
+        margin: 0 auto;
+    }
 } 
 
 /* sm */
@@ -86,6 +96,7 @@
     .feed{
         width: auto;
     }
+
 } 
 
 /* md */
@@ -95,17 +106,16 @@
         width: calc(100% - 72px);
     }
 
+   
 
-    .section{
-        max-width: 85%;
-    }
+
     
 }
 
 /* lg */
 @media (min-width: 1024px){
     .main{
-        justify-content: space-evenly;
+        justify-content: center;
     }
 }
 
@@ -121,7 +131,5 @@
 
 /* 2xl */
 @media (min-width: 1536px){
-    .container{
-        max-width: 1536px;
-    }
+
 }
